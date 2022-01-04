@@ -1,0 +1,87 @@
+body {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+.container {
+  width: 1000px;
+  height: 500px;
+  min-width: auto;
+  min-height: auto;
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.pics {
+  height: 450px;
+  width: 300px;
+  min-width: auto;
+  min-height: auto;
+} 
+
+.pics img {
+  height: 350px;
+  width: 270px;
+  position: relative;
+}
+.img-text  h2{
+ color:white;
+ font-size: large;
+ position: absolute;
+ bottom : 35%;
+ left: 16%;
+}
+.img-text p{
+ color:white;
+ font-size: x-small;
+ position: absolute;
+ bottom : 30%;
+ left: 10.5%;
+}
+.disc {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  padding-left: 30px;
+  padding-top: 0;
+}
+.logo {
+  display: flex;
+  flex-direction: row;
+  padding-left: 100px;
+}
+.logo h2 {
+  font-size: xx-large;
+  padding-left: 10px;
+  margin-top: 0;
+}
+.logo img {
+  height: 75px;
+  width: 75px;
+  padding-left: 10px;
+  margin-top: 0;
+}
+.info {
+  height: inherit;
+  width: 550px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+.info button {
+  height: 40px;
+  width: 140px;
+  background-color: black;
+  border: 1px solid #fff;
+  border-radius: 20;
+}
+.info button text{
+  color: white;
+}
+button:active {
+  transform: scale(1.03);
+}

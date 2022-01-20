@@ -1,0 +1,187 @@
+.top-container {
+    display: grid;
+    grid-gap: 50px;
+    min-height: 500px;
+    grid-template-areas:
+      "top-box-e top-box-e top-box-a top-box-a"
+      "top-box-e top-box-e top-box-b top-box-b"
+      " top-box-e top-box-e top-box-c top-box-d";
+    color: #fff;
+    font-size: 30px;
+  }
+  .toplinks {
+    display: block;
+    text-align: center;
+    margin: auto;
+  }
+  .treat {
+    background: url(./shop/holiday.jpg);
+    font-size: 30px;
+    color: aliceblue;
+    border-radius: 10px;
+  }
+  .mr {
+    font-size: 80px;
+  }
+  .mlink {
+    font-size: 30px;
+    color: aliceblue;
+  }
+  .btn {
+    background: black;
+    color: wheat;
+    padding: 0.6rem 1.3rem;
+    text-decoration: none;
+    border: 0;
+    display: inline-block;
+  }
+  .charity {
+    display: flex;
+    flex: 1;
+    background-color: whitesmoke;
+    justify-content: space-evenly;
+    padding: 3rem;
+    margin: 30px 0px;
+  }
+  .top-box-e {
+    grid-area: top-box-e;
+    border-radius: 0px;
+  
+    background: url(./shop/weight.jpg);
+    background-size: cover;
+    background-position: center;
+    padding: 3rem;
+    flex: 1;
+  }
+  
+  .top-box-a {
+    grid-area: top-box-a;
+    background: url(./shop/thorne.jpg);
+    background-size: cover;
+    /* background-position: center; */
+    padding: 3rem;
+    border-radius: 8px;
+    color: black;
+    border: 4px solid black;
+  }
+  .top-box-b {
+    grid-area: top-box-b;
+    background: url(./shop/cyclegroup.jpg);
+    background-size: cover;
+    background-position: center;
+    padding: 3rem;
+    border-radius: 8px;
+  }
+  .top-box-c {
+    grid-area: top-box-c;
+    background: url(./shop/sleep.jpg);
+    background-size: cover;
+    background-position: center;
+    padding: 3rem;
+    border-radius: 8px;
+    color: black;
+  }
+  .top-box-d {
+    grid-area: top-box-d;
+    background: url(./shop/Rower.webp);
+    background-size: cover;
+    background-position: center;
+    padding: 3rem;
+    border-radius: 8px;
+  }
+  .prdname {
+    padding: 0px;
+    margin: 0px;
+  
+    text-align: center;
+  }
+  .products {
+    display: flex;
+  
+    justify-content: space-around;
+    margin-top: 20px;
+    background-color: white;
+    margin-bottom: 0px;
+    border-radius: 10px;
+    align-items: baseline;
+    flex-wrap: nowrap;
+  }
+  .prd1 {
+    width: 140px;
+    height: auto;
+  }
+  .products2 {
+    margin-top: 40px;
+    background-color: white;
+    display: grid;
+    grid-template-columns: 25% 25% 50%;
+    grid-template-columns: 280px 280px;
+    grid-gap: 40px;
+  }
+  .prd2 {
+    width: 180px;
+    height: auto;
+  }
+  .massage {
+    background: url(./shop/usingmassage.jpg);
+    grid-row: 1/4;
+    grid-column: 3/-1;
+    background-size: cover;
+    background-position: center;
+    border-radius: 8px;
+  }
+  
+  @media (max-width: 700px) {
+    .top-container {
+      grid-template-areas:
+        "top-box-e top-box-e"
+        "top-box-e top-box-e"
+        "top-box-e top-box-e"
+        "top-box-a top-box-a"
+        "top-box-b top-box-b"
+        "top-box-c top-box-d";
+    }
+  }
+  
+  @media (max-width: 700px) {
+    .products {
+      flex-wrap: wrap;
+    }
+  }
+  @media (max-width: 700px) {
+    .products2 {
+      grid-template-areas:
+        "prod1 prod2"
+        "prod3 prod4"
+        "massage massage"
+        "massage massage"
+        "massage massage"
+        "massage massage";
+    }
+    .prod1 {
+      grid-area: prod1;
+    }
+    .prod2 {
+      grid-area: prod2;
+    }
+    .prod3 {
+      grid-area: prod3;
+    }
+    .prod4 {
+      grid-area: prod4;
+    }
+    .massage {
+      background: url(./shop/usingmassage.jpg);
+  
+      background-size: cover;
+      background-position: center;
+      border-radius: 8px;
+      grid-area: massage;
+    }
+  }
+  @media (max-width: 700px) {
+    .charity {
+      flex-wrap: wrap;
+    }
+  }
+  

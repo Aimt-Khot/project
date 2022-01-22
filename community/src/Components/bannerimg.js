@@ -1,11 +1,12 @@
 import React from 'react';
+import communitybanner from '../Images/community-banner.jpg'
 import './bannerimg.css';
 
 function Bannerimg() {
   return (
     <div  className="banner-container">
       <div className='banner-image'>
-        <img src="https://images.unsplash.com/photo-1530541930197-ff16ac917b0e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"/>
+        <img src={communitybanner}/>
       </div>
       <div className='banner-disc'>
         <h1>Community Coming Soon</h1>

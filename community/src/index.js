@@ -2,18 +2,17 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import reportWebVitals from './reportWebVitals';
-import Header from './Header'
-import Navbar from './Navbar'
-import Bannerimg from './bannerimg';
-import {FooterContainer} from "./footer000/containers/footer";
-
+import Header from './Components/Header'
+import Navbar from './Components/Navbar'
+import Bannerimg from './Components/bannerimg';
+import Footer from "./Components/Footer";
 
 ReactDOM.render(
   <React.StrictMode>
     <Header />
     <Navbar/>
     <Bannerimg />
-    <FooterContainer />
+    <Footer/>
   </React.StrictMode>,
   document.getElementById('root')
 );

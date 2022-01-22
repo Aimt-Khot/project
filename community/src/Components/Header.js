@@ -1,10 +1,10 @@
 import React from "react";
 import "./header.css";
-import logo from "./Images/logo.png";
-import group from "./Images/group.jpg";
-import heart from "./Images/heart.jpg";
-import account from "./Images/account.jpg";
-import cart from "./Images/cart.jpg";
+import logo from "../Images/logo.png";
+import group from "../Images/group.jpg";
+import heart from "../Images/heart.jpg";
+import account from "../Images/account.jpg";
+import cart from "../Images/cart.jpg";
 
 function Header() {
   return (
